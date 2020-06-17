@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="chat.css">
+    <title>Чат</title>
+</head>
+<body>
+<div id='chat-container'>
+
+    <div id='search-container'>
+        <input type="text" placeholder='Поиск'>
+    </div>
+
+    <div id='conversation-list'>
+        <div class="conversation active" >
+            <img src="3.jpg" alt="">
+            <div class="title-text">Пополитов Андрей</div>
+            <div class="created-date">11:00</div>
+            <div class="conversation-message">Привет не занят? Можешь помочь?</div>
+        </div>
+        <div class="conversation">
+            <img src="4.jpg" alt="">
+            <div class="title-text">Анастасия Власова</div>
+            <div class="created-date">12:45</div>
+            <div class="conversation-message">Можешь помочь?</div>
+        </div>
+        <div class="conversation">
+            <img src="5.jpg" alt="">
+            <div class="title-text">Родион Зорин</div>
+            <div class="created-date">Вчера</div>
+            <div class="conversation-message">Привет</div>
+        </div>
+        <div class="conversation">
+            <img src="6.jpg" alt="">
+            <div class="title-text">Евгений Польдяев</div>
+            <div class="created-date">8 июня</div>
+            <div class="conversation-message">Помоги!!!</div>
+        </div>
+        <div class="conversation">
+            <img src="7.jpg" alt="">
+            <div class="title-text">Анастасия Балаганская</div>
+            <div class="created-date">5 июня</div>
+            <div class="conversation-message">Привет как дела? Ты сегодя не занят?</div>
+        </div>
+        <div class="conversation">
+            <img src="8.jpg" alt="">
+            <div class="title-text">Евгений Голубев</div>
+            <div class="created-date">5 июня</div>
+            <div class="conversation-message">Привет как дела? Ты сегодя не занят?</div>
+        </div>
+
+
+    </div>
+
+    <div id='new-message-container'>
+        <a class="white-back" style='cursor:pointer'>+</a>
+    </div>
+
+    <div id='chat-title'>
+        <span>Слава Лазарев</span>
+    </div>
+
+    <div class="messages" id="messages">
+    </div>
+
+    <div id='chat-message-list'>
+        <div class="message-row you-message">
+
+            <div class="message-text">Привет не занят? Можешь помочь?</div>
+            <div class="message-time">11:00</div>
+
+        </div>
+        <div class="message-row other-message">
+            <div class="message-container">
+                <img src="3.jpg" alt="">
+                <div class="message-text">Там надо тд тп....</div>
+                <div class="message-time">10 июня</div>
+            </div>
+        </div>
+        <div class="message-row you-message">
+            <div class="message-text">Да</div>
+            <div class="message-time">10 июня</div>
+        </div>
+        <div class="message-row other-message">
+            <div class="message-container">
+                <img src="3.jpg" alt="">
+                <div class="message-text">Тебе надо выввести все элементы?</div>
+                <div class="message-time">10 июня</div>
+            </div>
+        </div>
+        <div class="message-row you-message">
+            <div class="message-text">У меня не получается реализовать вывод из бд, подскажи как сделать</div>
+            <div class="message-time">10 июня</div>
+        </div>
+        <div class="message-row other-message">
+            <div class="message-container">
+                <img src="3.jpg" alt="">
+                <div class="message-text">С чем?</div>
+                <div class="message-time">10 июня</div>
+            </div>
+        </div>
+        <div class="message-row you-message">
+            <div class="message-text">Можешь помочь?</div>
+            <div class="message-time">10 июня</div>
+        </div>
+        <div class="message-row other-message">
+            <div class="message-container">
+                <img src="3.jpg" alt="">
+                <div class="message-text">Даров</div>
+                <div class="message-time">10 июня</div>
+            </div>
+        </div>
+        <div class="message-row you-message">
+            <div class="message-text">Здарова</div>
+            <div class="message-time">10 июня</div>
+        </div>
+
+    </div>
+
+    <div id='chat-form'>
+        <input type="button" id="sendButton" value="send">
+        <div class="input-container">
+            <input type="text" id="commandInput">
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+</html>

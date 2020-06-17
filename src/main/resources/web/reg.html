@@ -1,0 +1,46 @@
+<html lang="ru-Ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ТЭЦ-1</title>
+  <link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+<body>
+<div class="wrapper">
+</div>
+<div class="container">
+
+  <div class="panel">
+    <h1 class="panel_title">
+      Вход	</h1>
+    <form action="/register" class="form panel_form " method="post">
+
+      <div class="form_row">
+
+        <div class="field type-text name-Login[username]">
+
+          <div class="field-control">
+            <input type="text"  class="string form_input" name="Login[username]" placeholder="Логин" required="">
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="form_row">
+        <div class="field type-password name-Login[password]">
+          <div class="field-control">
+            <input type="password" id="field-Login_password_" class="string form_input " name="Login[password]" placeholder="Пароль" required="">
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="form_row">
+        <div class="field type-hidden name-_csrf">
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="form_buttons">
+        <input type="submit" class="form_button" name="send" value="войти" disabled="">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
