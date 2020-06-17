@@ -56,7 +56,7 @@ function received(message) {
     if (message.startsWith("clear@")) {
         clear();
     }
-    if (message.startsWith("adduser@")) {
+    else if (message.startsWith("adduser@")) {
         addUser(message.substring(8));
     }
     else if (message.startsWith("deleteuser@")) {
